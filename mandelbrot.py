@@ -5,7 +5,7 @@ import numpy as np
 M = 250
 
 # Grid pixels N*N
-N = 200
+N = 1000
 
 # D - surrounding of point (x0, y0)
 x0, y0 = (-0.5, 0.)
