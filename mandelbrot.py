@@ -33,5 +33,5 @@ R = np.array(R) / M
 R = np.transpose(R)
 
 plt.imshow(R, cmap='hsv',  interpolation='nearest', extent=ext)
-plt.savefig('mandelbrot.png')
+plt.savefig('mandelbrot_1000by1000.png')
 plt.show()
