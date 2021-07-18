@@ -8,12 +8,17 @@ init_notebook_mode(connected=True)
 
 df = pd.read_csv('building_one.csv', header=[0,1], index_col=0)
 
-# Extract energy series from multi-index
+# Extract series from multi-index
 energy_series = df.loc[:, ('Energy', '3')]
+steam_series  = df.loc[:, ('Steam' , '4')]
 
 # Plot
 energy_data = go.Scatter(x=energy_series.index,
                          y=energy_series.values)
+
+steam_data = go.Scatter(x=steam_series.index,
+                        y=steam_series.values,
+                        yaxis='y2')
 
 layout = go.Layout(title='Energy Plot',
                    xaxis=dict(title='Date'),
