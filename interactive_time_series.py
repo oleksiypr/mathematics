@@ -12,7 +12,7 @@ df.sort_index(inplace=True)
 
 # Extract series from multi-index
 energy_series = df.loc[:, ('Energy', '3')].copy()
-steam_series  = df.loc[:, ("Steam" , "4")].copy()
+steam_series  = df.loc[:, ('Steam' , '4')].copy()
 
 # Plot
 energy_data = go.Scatter(x=energy_series.index,
