@@ -1,8 +1,5 @@
 import plotly.graph_objs as go
 import numpy as np
-from plotly.offline import init_notebook_mode
-
-init_notebook_mode(connected=True)
 
 Phi, R = np.mgrid[0:4*np.pi:100j, -5.:5.:100j]
 X, Y = (R * np.cos(Phi), R * np.sin(Phi))

@@ -1,9 +1,6 @@
 import pandas as pd
 import plotly.graph_objs as go
-from plotly.offline import init_notebook_mode
 from datetime import datetime
-
-init_notebook_mode(connected=True)
 
 # Read in data and convert index to a datetime
 df = pd.read_csv('building_one.csv', header=[0, 1], index_col=0)
