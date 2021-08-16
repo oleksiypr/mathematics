@@ -30,7 +30,7 @@ R  = np.array([x, y, z])
 R1 = T @ R
 
 # mirror plane coordinates
-X1, Y1 = np.meshgrid(np.linspace(-10., 10., 5), np.linspace(- 0., 10., 5))
+X1, Y1 = np.meshgrid(np.linspace(-10., 10., 5), np.linspace(0., 10., 5))
 Z1 = np.zeros([5, 5])
 
 # mirror plane coordinate tensor of rank 3
